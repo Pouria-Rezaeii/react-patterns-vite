@@ -1,0 +1,59 @@
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweets {
+  width: 380px;
+  padding: 1rem 2rem 0.5rem;
+  border: solid 1px rgb(63, 86, 110);
+  border-radius: 2px;
+}
+
+.tweets_list {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.tweets_list::-webkit-scrollbar {
+  width: 0;
+}
+
+.tweets_list-section {
+  margin-top: 2.5rem;
+}
+
+.tweets_filter-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tweets_filter-box label {
+  width: 100%;
+}
+
+.tweets_filter-box input[type='text'] {
+  width: 345px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.tweets_filter-box input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+
+.tweets_filter-box label:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
